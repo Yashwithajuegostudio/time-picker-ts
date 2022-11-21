@@ -1,13 +1,15 @@
 import React from 'react'
 import { ButtonStyle } from './Button.style'
 
-interface ButtonProps {
+export interface ButtonProps {
     title?:string;
-    clickHandler():void;
+    onClickHandler?:() => void;
+    active?:boolean;
+    
 }
 
-export const Button:React.FC<ButtonProps> = ({title,clickHandler}) => (
+export const Button:React.FC<ButtonProps> = ({title,onClickHandler,active}) => (
     <>
-    <ButtonStyle onClick={clickHandler} >{title}</ButtonStyle>
+    <ButtonStyle onClick={onClickHandler} active={active}>{title}</ButtonStyle>
     </>
 )

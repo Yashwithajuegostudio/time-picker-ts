@@ -1,14 +1,12 @@
 import React from 'react';
 import './App.css';
-import { Button } from './components/Button/Button';
+import { TimePicker } from './components/TimePicker/TimePicker';
 
 
 function App() {
-  const handler=()=>{
-    console.log("helllo")
-  }
+ 
   return (
-   <Button title={"hello"} clickHandler={()=>{handler()}}/>
+   <TimePicker/>
   );
 }
 

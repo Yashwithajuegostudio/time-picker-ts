@@ -4,8 +4,7 @@ import { ButtonStyle } from './Button.style'
 export interface ButtonProps {
     title?:string;
     onClickHandler?:() => void;
-    active?:boolean;
-    
+    active?:boolean; 
 }
 
 export const Button:React.FC<ButtonProps> = ({title,onClickHandler,active}) => (

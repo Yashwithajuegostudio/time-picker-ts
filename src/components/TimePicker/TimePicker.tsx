@@ -6,9 +6,9 @@ import { TimePickerBox, TimePickerContainer, TimePickerHeader } from './TimePick
 
 
 export const TimePicker:React.FC = () => {
-    const [hourValue, setHourValue] = useState("");
-    const [minuteValue, setMinuteValue] = useState("");
-    const [timeFieldStatus, setTimeFieldStatus] = useState(TITLE.minuteTitle);
+    const [hourValue, setHourValue] = useState<string>("");
+    const [minuteValue, setMinuteValue] = useState<string>("");
+    const [timeFieldStatus, setTimeFieldStatus] = useState<string>(TITLE.minuteTitle);
 
     const handleNumberClick = (timeValue:string, btnStatus:string) => {
         btnStatus === TITLE.hourTitle
